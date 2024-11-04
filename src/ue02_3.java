@@ -10,7 +10,7 @@ public class ue02_3 {
         double y = scanner.nextDouble();
         
 
-        if( x > 0 && y > 0)
+        if( x >= 0 && y >= 0)
         {
             if(Math.sqrt((x*x) + (y*y)) > 4) {
                 System.out.println("Der Punkt ("+ x +"|"+ y + ") ist außerhalb des Kreises!");
