@@ -13,7 +13,7 @@ public class ue02_2 {
             Out.print("Enter a positive year: ");
             year = scanner.nextInt();
             if (year <= 0) {
-                System.out.println("Year must be a positive integer. Please try again.");
+                Out.println("Year must be a positive integer. Please try again.");
             }
         } while (year <= 0);
 
@@ -21,11 +21,11 @@ public class ue02_2 {
             Out.print("Enter a month (1-12): ");
             month = scanner.nextInt();
             if (month < 1 || month > 12) {
-                System.out.println("Month must be between 1 and 12. Please try again.");
+                Out.println("Month must be between 1 and 12. Please try again.");
             }
         } while (month < 1 || month > 12);
 
-        boolean isLeapYear = false;
+        boolean isLeapYear;
 
         if ((year %4 == 0 && year %100 != 0) || (year %400 == 0)) {
             
@@ -53,7 +53,7 @@ public class ue02_2 {
                 }
                 break;
             default:
-                System.out.println("Invalid month entered. Please enter a month between 1 and 12.");
+                Out.println("Invalid month entered. Please enter a month between 1 and 12.");
         }
           scanner.close();
     }
